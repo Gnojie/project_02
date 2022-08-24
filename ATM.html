@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let caozuo = 0
+        let sum = 1000
+        while (caozuo !== '4' ){
+            caozuo = prompt('1.存钱 2.取钱 3.查看余额 4.退出')
+            // console.log(caozuo);
+            switch(caozuo){
+                case '1':   
+                    let temp_save = +prompt('请输入金额:')
+                    sum += temp_save
+                    alert(`您目前的余额是${sum}`)
+                    break
+                case '2':
+                    let temp_qu = +prompt('请输入金额:')
+                    sum -= temp_qu
+                    alert(`您目前的余额是${sum}`)
+                    break
+                case '3':
+                    alert(`您目前的余额是${sum}`)
+                    break
+            }
+        }
+
+    </script>
+</body>
+</html>

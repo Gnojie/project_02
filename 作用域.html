@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        全局作用域: script全局使用 
+        局部作用域: 函数内部使用
+        块级作用域: 块作用域由{}组成 包括if和for中的{}等
+         */
+
+        //  1.全局变量谁都可以用
+        let num =1
+        console.log(num)
+        function f(){
+            console.log(num);
+        }
+        if(true){
+            console.log(num);
+        }
+
+        // 2.局部作用域 变量是局部变量 只能在函数内部使用 函数外部不可使用
+        
+
+        // 3.块级作用域 只能在块里访问 也不能跨函数访问
+        if(true){
+            let num = 10
+        }
+
+        // 作用域链:就近原则
+    </script>
+</body>
+</html>

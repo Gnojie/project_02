@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 带有参数的函数
+        function getsun(x , y){
+            document.write(x + y)
+        }
+        // 调用
+        getsun(1 , 2)
+
+
+        function getsum(x ,y ){
+            // 利用||的短路特性
+            x = x||0
+            y = y||0
+            document.write(x + y)
+        }
+        // 如果一个变量没有赋值 默认为undefined
+        getsum()
+    </script>
+</body>
+</html>
